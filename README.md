@@ -61,5 +61,18 @@ https://gpiozero.readthedocs.io/en/stable/recipes.html
 
 
 
+Su repositorio deberá de incluir las ramas de todos los ejercicios y emepzar desde el primer punto, main: 
+
+
+![inicio ramas](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/bb174c6e-8843-4a35-b705-ab7ca44a0d22)
+
+al final cada cambio deberá reflejarse y las ramas deberían de ubicarse en distintos commits:
+
+
+![cada cambio por serparado](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/75181b6c-53d1-46e4-82fc-df3211da0efa)
+
+
+
+
 
 
