@@ -18,6 +18,7 @@ Requistos: LED GPIO17
 
 
 GPIOs:
+
 ![pinout](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/db6c6350-d49a-47ca-8274-f02341fe73f7)
 
 
