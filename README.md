@@ -31,6 +31,7 @@ led.on()
  https://gpiozero.readthedocs.io/en/stable/api_output.html 
 
 LED connection: 
+
 Siempre tenemos que conectar una resistencia en serie al led. 
 
 
