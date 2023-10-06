@@ -14,8 +14,9 @@ Programa de control de leds de manera que le mandes una secuencia de prendido y 
 Programa para clave morse con un led. S.O.S  30 min: LED GPIO17
 
 
-GPIOs
 
+GPIOs
+![pinout](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/db6c6350-d49a-47ca-8274-f02341fe73f7)
 
 
 
@@ -29,10 +30,14 @@ led.on()
 LED connection: 
 Siempre tenemos que conectar una resistencia en serie al led. 
 
+![led conectado](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/08e770cf-7fbe-4c03-8c30-d71fbf9b26cf)
+
+
+
 
 
 Boton connection: 
-
+![boton](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/0b1698c3-45aa-484e-a45c-bdea63a12bd1)
 
 from gpiozero import Button
 
@@ -45,6 +50,8 @@ while True:
         print("Button is not pressed")
 
 https://gpiozero.readthedocs.io/en/stable/recipes.html 
+
+![boton + led](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/c4e4e7a7-8c2b-4074-87cf-543509158e05)
 
 
 
