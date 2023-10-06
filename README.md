@@ -3,19 +3,21 @@ Este repositorio sirve como base para los de todos los equipos
 Proyectos: 
 
 Retos en equipo: 
-Programa click a un botón refleja un led encendido: 
-LED GPIO17, Botón GPIO 2
-Programa que con el tiempo escrito en la consola, refleje el led encendido ese tiempo
-LED GPIO17
-Programa que genere secuencia de 1, 2, 3, 4, 4, 3, 2, 1 LEDs
-LED GPIO17, GPIO2, GPIO3, GPIO4
-Programa control de leds para simbolizar un semaforo: LED rojo, verde y amarillo. Por consola se escribe si queremos el alto ( rojo), siga ( verde), precaución ( amarillo). LED GPIO 17, GPIO2, GPIO3, GPIO4
-Programa de control de leds de manera que le mandes una secuencia de prendido y haga eso con los leds, por ejemplo 0100 prenderia solo el segundo led, 1111 prenderia los 3 leds 20 min. LED GPIO17, GPIO2, GPIO3, GPIO4
-Programa para clave morse con un led. S.O.S  30 min: LED GPIO17
+1) Programa click a un botón refleja un led encendido:
+Requistos: LED GPIO17, Botón GPIO 2
+3) Programa que con el tiempo escrito en la consola, refleje el led encendido ese tiempo
+Requistos: LED GPIO17
+4) Programa que genere secuencia de 1, 2, 3, 4, 4, 3, 2, 1 LEDs
+Requistos: LED GPIO17, GPIO2, GPIO3, GPIO4
+5) Programa control de leds para simbolizar un semaforo: LED rojo, verde y amarillo. Por consola se escribe si queremos el alto ( rojo), siga ( verde), precaución ( amarillo).
+Requistos: LED GPIO 17, GPIO2, GPIO3, GPIO4
+6) Programa de control de leds de manera que le mandes una secuencia de prendido y haga eso con los leds, por ejemplo 0100 prenderia solo el segundo led, 1111 prenderia los 3 leds 20 min. LED GPIO17, GPIO2, GPIO3, GPIO4
+Programa para clave morse con un led. S.O.S  30 min:
+Requistos: LED GPIO17
 
 
 
-GPIOs
+GPIOs:
 ![pinout](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/db6c6350-d49a-47ca-8274-f02341fe73f7)
 
 
@@ -30,6 +32,7 @@ led.on()
 LED connection: 
 Siempre tenemos que conectar una resistencia en serie al led. 
 
+
 ![led conectado](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/08e770cf-7fbe-4c03-8c30-d71fbf9b26cf)
 
 
@@ -37,6 +40,7 @@ Siempre tenemos que conectar una resistencia en serie al led.
 
 
 Boton connection: 
+
 ![boton](https://github.com/jgav1/EjerciciosLEDs/assets/36417687/0b1698c3-45aa-484e-a45c-bdea63a12bd1)
 
 from gpiozero import Button
