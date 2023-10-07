@@ -11,6 +11,7 @@ Requistos: LED GPIO17
 Requistos: LED GPIO17, GPIO2, GPIO3, GPIO4
 5) Programa control de leds para simbolizar un semaforo: LED rojo, verde y amarillo. Por consola se escribe si queremos el alto ( rojo), siga ( verde), precaución ( amarillo).
 Requistos: LED GPIO 17, GPIO2, GPIO3, GPIO4
+
 6) Programa de control de leds de manera que le mandes una secuencia de prendido y haga eso con los leds, por ejemplo 0100 prenderia solo el segundo led, 1111 prenderia los 3 leds 20 min. LED GPIO17, GPIO2, GPIO3, GPIO4
 Programa para clave morse con un led. S.O.S  30 min:
 Requistos: LED GPIO17
