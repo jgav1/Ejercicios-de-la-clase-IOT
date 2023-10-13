@@ -1,4 +1,7 @@
 Notas: cada reto debe de estar en una rama individual, cada rama debe de pertenecer solo a un miembro. no será válido que un solo miembro suba todas ramas. 
+
+Nota: correr siempre nuestros programas de python con python3 nombreDelPrograma.py
+
 Retos en equipo:
 0. terminar los problemas de la sesion pasada. es decir los que están en el archivo README.md de este repositorio, si es que no los han completado. cada ejercicio debe de estar en su rama correspondiente. 
 1. crear un programa que lea cuando un botón. Se deberá de escribir en un archivo de texto la fecha y hora de cuando se presionó este.
@@ -10,6 +13,8 @@ por otro lado 0101 indicaria que se encienda el led 2 y 4.
 
 para leer la memoria ram en porcentaje usar la siguiente linea.
 psutil.virtual_memory().available * 100 / psutil.virtual_memory().total
+
+usen de referenica la presentacion. la comprativa sería el uso de psutil para leer el uso del cpu.
 
 adicionalmente se deben de prender los 4 leds en este orden:
 
