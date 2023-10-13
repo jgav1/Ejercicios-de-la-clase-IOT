@@ -1,0 +1,27 @@
+Notas: cada reto debe de estar en una rama individual, cada rama debe de pertenecer solo a un miembro. no será válido que un solo miembro suba todas ramas. 
+Retos en equipo:
+0. terminar los problemas de la sesion pasada. es decir los que están en el archivo README.md de este repositorio, si es que no los han completado. cada ejercicio debe de estar en su rama correspondiente. 
+1. crear un programa que lea cuando un botón. Se deberá de escribir en un archivo de texto la fecha y hora de cuando se presionó este.
+el botón a usar es el siguiente: Botón GPIO 2
+2. crear un programa que encienda una serie de leds, al leer la peticion de un usuario escrita en un archivo de texto. 
+por ejemplo, en el archivo de texto deberá de aparecer 1110, esto indicaría que se deberán de encender los leds 1, 2 y 3 mientras que el 4 no. 
+por otro lado 0101 indicaria que se encienda el led 2 y 4.
+3. programa donde se lea el uso de memoria ram y la gaurde en un .txt
+
+para leer la memoria ram en porcentaje usar la siguiente linea.
+psutil.virtual_memory().available * 100 / psutil.virtual_memory().total
+
+adicionalmente se deben de prender los 4 leds en este orden:
+
+si la ram disponible es menor a 25 %
+1000
+si la ram disponible es menor a 50% 
+1100
+si la ram disponible es menor a 75%
+1110
+si la ram disponible es menor al 90%
+1111
+
+usar los siguientes LEDS
+ LED GPIO17, GPIO2, GPIO3, GPIO4 
+
