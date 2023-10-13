@@ -38,3 +38,5 @@ usar los siguientes LEDS
 
 5. Guardar la temperatura y humedad del sensor de temperatura y humedad en un .txt
 
+6. con el codigo anterior, graficar la información en 2 graficas una de barras y en una de puntos, para esto usar la liberira matplotlib
+
