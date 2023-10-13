@@ -30,3 +30,9 @@ si la ram disponible es menor al 90%
 usar los siguientes LEDS
  LED GPIO17, GPIO2, GPIO3, GPIO4 
 
+4. leer la distancia con el sensor ultrasonico y esciribir en un .txt la distancia y fecha de cuando se leyó. la Lectura debe de hacerse cada 5 segundos y debe de agregarse este indicador: 
+- menos de 10 cm ( MUY CERCAAA!)
+- entre 10 y 30 cm ( CERCAAA!)
+- entre 30 y 100 cm (EXCELENTE!!)
+- entre 100 y 400 cm ( TE PASASTEEEE!!)
+
