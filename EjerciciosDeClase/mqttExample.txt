@@ -1,0 +1,14 @@
+import subprocess
+
+topic = "tu/topico/aqui"
+message = "Mensaje a enviar"
+
+# Construye el comando mosquitto_pub
+command = ["mosquitto_pub", "-t", topic, "-m", message]
+
+# Ejecuta el comando
+try:
+    subprocess.run(command, check=True)
+    print(f"Mensaje enviado: {message}")
+except subprocess.CalledProcessError as e:
+    print(f"Error al enviar el mensaje: {e}")
