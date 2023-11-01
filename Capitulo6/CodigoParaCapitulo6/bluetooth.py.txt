@@ -1,0 +1,15 @@
+import serial
+
+
+ser = serial.Serial('/dev/rfcomm0', 115200)
+ser.close()
+ser.open()
+
+str = b'Bluetooth LED Control\r\n'
+n = ser.write(str)
+
+while True:
+	if ser.readable():
+		response = ser.readline()
+		print(response)
+

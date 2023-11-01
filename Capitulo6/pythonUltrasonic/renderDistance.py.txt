@@ -1,0 +1,23 @@
+from flask import Flask, request, render_template
+import pymysql
+
+db = None
+cur = None
+app = Flask(__name__)
+
+def select(query):
+	db = pymysql.connect(host="192.168.1.75", user="root", password="12345", db="mysql", charset="utf8")
+	cur = db.cursor()
+	cur.execute(query)
+	result = cur.fetchall()
+	db.close()
+	return result
+	
+@app.route("/temp_humid_chart")
+def distance_chart():
+	sql = "SELECT DATATIME, DIST FROM distance ORDER BY DATATIME ASC LIMIT 1000"
+	result = select(sql)
+	return render_template("temp_dist_chart.html", result=result)
+	
+if __name__ == "__main__":
+	app.run(debug=True, port=88, host="0.0.0.0")

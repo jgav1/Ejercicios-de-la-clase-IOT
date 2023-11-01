@@ -1,0 +1,15 @@
+<html>
+	<head>
+	<title>Flask HTML test page</title>
+	</head>
+	
+	<body>
+	<center>
+	<br>
+	<strong> Raspberry PI 4 Flask HTML Test Page</strong>
+	<br>
+	<img src="../static/Raspberry_Pi_OS_Logo.png">
+	</center>
+	</body>
+</html>
+	

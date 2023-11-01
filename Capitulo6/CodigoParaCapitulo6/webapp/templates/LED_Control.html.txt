@@ -1,0 +1,15 @@
+<html>
+	<head>
+	<title>LED Control Test</title>
+	</head>
+	
+	<body>
+	<h2>LED is {{ ret }}</h2>
+	<tr>
+	    <td><strong><a href="led_control_act?led=1">LED ON </a></strong></td>
+	    <td><br><br></td>
+	    <td><strong><a href="led_control_act?led=2">LED OFF </a></strong></td>
+	</tr>
+	</body>
+</html>
+	

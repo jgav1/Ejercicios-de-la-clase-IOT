@@ -1,0 +1,17 @@
+<html>
+	<head>
+	<title>POST Method Request Test</title>
+	</head>
+	
+	<body>
+	<h2>ID:{{ id }}, PASSWORD:{{ password }}</h2>
+	<form method="post" action="/method_post_act">
+		<label id="Label1">id</label>
+		<input name="id" type="text"/>
+		<label id="Label1"><br />password </label>
+		<input name="password" type="text" /><br /><br />
+		<input name="Submit1" type="submit" value="submit" />
+	</form>
+	</body>
+</html>
+	

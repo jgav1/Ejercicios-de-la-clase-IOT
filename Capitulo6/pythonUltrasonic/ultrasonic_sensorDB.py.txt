@@ -1,0 +1,66 @@
+import sys
+
+import time
+
+import pymysql
+
+
+
+from gpiozero import DistanceSensor
+
+from time import sleep
+
+
+
+ultrasonic = DistanceSensor(echo = 18, trigger = 27)
+
+
+
+db, cur = None, None
+
+
+
+db = pymysql.connect(host="192.168.1.75", user="root", password="12345", db="mysql", charset="utf8")
+
+
+
+try:
+
+    cur = db.cursor()
+
+    while True:
+
+        distance = round(ultrasonic.distance * 100, 3)
+
+        if distance is not None:
+
+            sql = "INSERT INTO distance(dist) VALUES (%4.1f)" % distance
+
+            print(sql)
+
+            cur.execute(sql)
+
+            db.commit()
+
+        else:
+
+            print("failed to get reading. Try again!")
+
+        time.sleep(1)
+
+except KeyboardInterrupt:
+
+    pass
+
+finally:
+
+    db.close()
+
+
+
+while True:
+
+    print("Distance: ", round(ultrasonic.distance * 100, 3))
+
+    sleep(1)
+
